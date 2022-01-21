@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Deck {
 	private List<Card> cards = new ArrayList<Card>(fillDeck());
-	//public Deck(){} //what does this do again? why is it needed? did i do this randomly?
 
 	private List<Card> fillDeck(){
 		List<Card> newDeck = new ArrayList<Card>();
@@ -15,18 +14,10 @@ public class Deck {
 			for(int j = 2; j <= 14; j++) {                                											  	
 					Card temp = new Card(j, cardSuits[i]);//was i supposed to use the setters for this part?
 					newDeck.add(temp);
-			}
+			}//i think this entire thing should be in the field rather than than a private method even though it works
 		}	
 return newDeck;
 }
-
-//public List<Card> getCards() {//is this required?
-//	return cards;
-//}
-
-//public void setCards(List<Card> cards) {//is this required? 
-	//this.cards = cards;
-//}
 public void shuffle() {
 	Collections.shuffle(cards);
 }

@@ -26,17 +26,8 @@ public void draw(Deck deck) {//draws a card from a deck and adds it to the playe
 public void incrementScore() {
 score++;	
 }
-public List<Card> getHand() {
-	return hand;
-}
-public void setHand(List<Card> hand) {
-	this.hand = hand;
-}
 public int getScore() {
 	return score;
-}
-public void setScore(int score) {
-	this.score = score;
 }
 public String getName() {
 	return name;
@@ -44,5 +35,7 @@ public String getName() {
 public void setName(String name) {
 	this.name = name;
 }
-
+public void printScore() {
+	System.out.println(name + ": " + score);
+}
 }

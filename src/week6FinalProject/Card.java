@@ -48,23 +48,10 @@ public void describe() {
 	}
 	if(value == 14) {
 		System.out.println("Ace of " + name);
-	}
+	}//use a switch statement instead above. don't ever do this. 
 }
-/*
- * the method above not only describes the Card but also represents the value as a word instead of a 
- * number, this is nice because there is no 11,12,13 or 14 card in standard playing cards
- */
 public int getValue() {
 	return value;
-}
-public void setValue(int value) {
-	this.value = value;
-}
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
 }
 
 }
