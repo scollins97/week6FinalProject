@@ -3,53 +3,57 @@ package week6FinalProject;
 public class Card {
 private int value;
 private String name;
-
+//every card will have a value from 2 to 14 and a suit name 
 public Card(int value, String name) {
 	this.value = value;
 	this.name = name;
 }
-
+//if a card calls the describe method it will describe it this way. 
 public void describe() {
-	if(value == 2) {
+	switch(value) {
+	case 2: 
 		System.out.println("Two of " + name);
-	}
-	if(value == 3) {
+		break;
+	case 3: 
 		System.out.println("Three of " + name);
-	}
-	if(value == 4) {
+		break;
+	case 4:
 		System.out.println("Four of " + name);
-	}
-	if(value == 5) {
+		break;
+	case 5:
 		System.out.println("Five of " + name);
-	}
-	if(value == 6) {
+		break;
+	case 6:
 		System.out.println("Six of " + name);
-	}
-	if(value == 7) {
+		break;
+	case 7:
 		System.out.println("Seven of " + name);
-	}
-	if(value == 8) {
+		break;
+	case 8:
 		System.out.println("Eight of " + name);
-	}
-	if(value == 9) {
+		break;
+	case 9:
 		System.out.println("Nine of " + name);
-	}
-	if(value == 10) {
+		break;
+	case 10:
 		System.out.println("Ten of " + name);
-	}
-	if(value == 11) {
+		break;
+	case 11:
 		System.out.println("Jack of " + name);
-	}
-	if(value == 12) {
+		break;
+	case 12:
 		System.out.println("Queen of " + name);
-	}
-	if(value == 13) {
+		break;
+	case 13:
 		System.out.println("King of " + name);
-	}
-	if(value == 14) {
+		break;
+	case 14:
 		System.out.println("Ace of " + name);
-	}//use a switch statement instead above. don't ever do this. 
+		break;
+	}
 }
+	
+//gets the value of a card
 public int getValue() {
 	return value;
 }
